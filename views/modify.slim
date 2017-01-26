@@ -1,0 +1,10 @@
+span ID: "#{@movie.id}"
+
+form action="/movies/#{@movie.id}/modify" method="POST"
+  input type="hidden" name="_method" value="PUT"
+
+  input type="text" name="name" value=@movie.name
+  input type="text" name="director" value=@movie.director
+  input type="text" name="year" value=@movie.year
+
+  input.button type="submit" value="Update >>"

@@ -1,0 +1,24 @@
+<div class="media">
+  <div class="media-left">
+<img alt="<%= @movie.name %>"class="media-object" src="/images/movies/<%=@movie.id %>.jpg"style="width:320px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= @movie.name %></h4>
+    <dl>
+      <td>Id: <%= @movie.id %></td>
+
+      <td>Name: <%= @movie.name %></td>
+<dd><%= %></dd>
+      <td>Director: <%= @movie.director %> </td>
+<dd><%=  %></dd>
+      <td> Year:  <%= @movie.year %></td>
+
+
+      <dd><%=  %></dd>
+      <td>   </td>
+    <a class="btn btn-default btn-xs" href="/movies/<%= @movie.id %>/modify/" role="button">Update</a>
+    <a class="btn btn-default btn-xs" href="/movies/<%= @movie.id %>/update" role="button">Delete</a>
+</form>
+    </dl>
+  </div>
+</div>
